@@ -5,3 +5,36 @@
     Verde: #49a09d
     lilás: #5f2c82
 */
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+#login{
+    background-image: url(../imagens/pexels-ana-benet-8243369.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;height: 100vh;
+    display: block;
+    margin: auto;
+}
+
+#formulario{
+    position:absolute;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+p input{
+    border-radius: 10px;  
+    width: 40vw;
+    padding: 5px;
+
+}
