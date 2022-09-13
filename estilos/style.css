@@ -14,8 +14,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
 }
-#login{
-    background-image: url(../imagens/pexels-ana-benet-8243369.jpg);
+
+#imagem img{
+   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -24,17 +25,48 @@ body{
     margin: auto;
 }
 
+
 #formulario{
+    background-color: rgb(255, 255, 255);
     position:absolute;
     margin: auto;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 20px;
 }
 
-p input{
+p>input{
     border-radius: 10px;  
     width: 40vw;
     padding: 5px;
 
 }
+
+
+.icons_pequenos{
+    min-width: 10%;
+    background-color: #49a09d;
+    display: inline;
+    padding: 7px;
+     margin: 10px;
+     border-radius: 10px;
+    }
+
+.icons_pequenos .enviar_limpar{
+    width: 20%;
+    padding: 5px;
+     margin-top: 5px;
+     margin-right: 5px;
+     
+     }
+
+    .icons{background-color: blueviolet;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 3px;
+   }
+
+   
