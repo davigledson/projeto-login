@@ -26,11 +26,17 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    
     background-color: white;
     width: 250px;height: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
+
+    transition: width .3s, height .3s; /*animação*/
+    transition-timing-function: ease; /*a animação dar uma suavizada*/
+    
+
 }
 section#login > div#imagem{
     background-color: #5f2c82;
