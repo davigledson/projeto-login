@@ -25,7 +25,7 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    
     
     background-color: white;
     width: 250px;height: 500px;
@@ -35,9 +35,11 @@ section#login{
 
     transition: width .3s, height .3s; /*animação*/
     transition-timing-function: ease; /*a animação dar uma suavizada*/
+    transform: translate(-50%,-50%);/*SEMPRE QUE TIVER UMA ANIMAÇÃO OU TRANSFORMAÇÃO COLOQUE-A SEMPRE NO FINAL DO SELETOR */
+}
     
 
-}
+
 section#login > div#imagem{
     background-color: #5f2c82;
     background-image: url(../imagens/pexels-césar-fonseca-10776723.jpg);
@@ -86,17 +88,43 @@ form > a.botao{
     margin-top: 5px;
 }
 form>a>span.material-symbols-outlined{
-    font-size: 1em;
+    font-size: 1em;   
 }
+
+div > .material-symbols-outlined{
+    color: white;
+   
+    font-size: 2em;
+     width: 40px;
+     padding: 5px;
+    
+}
+div.campo > input{
+    font-size: 1em;
+background-color:#94cfcd;
+height: 100%;
+border-radius: 8px;
+padding: 4px;
+width: calc(100% - 44px); /*css tbm fax caculos*/
+border: 0px;
+transform: translateY(-5px);/*SEMPRE QUE TIVER UMA ANIMAÇÃO OU TRANSFORMAÇÃO COLOQUE-A SEMPRE NO FINAL DO SELETOR */
+}
+
+div.campo >input:focus-within /*ganha foco - a caixa que tá com foco fica branca*/{
+background-color: white;
+
+}
+
 form> a.botao:hover{
     background-color: #49a09d;
 }
 form>div.campo{
+    border: solid 2px  #5f2c82;
     background-color: #5f2c82;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 div.campo>label{
